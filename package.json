@@ -1,0 +1,14 @@
+{
+  "name": "dj-funtime-client",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-elm && npm run start-server",
+    "build-elm": "elm make src/Main.elm --output dist/app.js",
+    "start-server": "./node_modules/local-web-server/bin/cli.js -s index.html"
+  },
+  "author": "Charles Watson",
+  "devDependencies": {
+    "local-web-server": "^1.2.4"
+  }
+}
